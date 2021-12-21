@@ -5,15 +5,17 @@ const getRegistrationData = async function(){
       );
    const data = await request.json();
    console.log(data);
+   displayContactList(data);
 }
 
 getRegistrationData();
 
 const displayContactList = function(data){
    for (let student of data){
-      if (student.registered = "no")
-      console.log(student.name)
+      if (student.registered == "no"){
+         console.log(student.name);
+      }
+      
    }
 }
 
-displayContactList();
