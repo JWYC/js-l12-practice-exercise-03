@@ -11,13 +11,14 @@ const getRegistrationData = async function(){
 
 const displayContactList = function(data){
    for (let student of data){
-      if (student.registered == "no"){
+      if (student.registered === "no"){
          //console.log(student.name);
          
-         let name = student.name
+         //let name = student.name
+         //cleaned no need for extra variable
          
          let list = document.createElement("li");
-         list.innerText = name;
+         list.innerText = student.name;
          //console.log(list);
          nonRegistered.append(list);
       }
