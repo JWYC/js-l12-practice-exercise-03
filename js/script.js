@@ -8,3 +8,12 @@ const getRegistrationData = async function(){
 }
 
 getRegistrationData();
+
+const displayContactList = function(data){
+   for (let student of data){
+      if (student.registered = "no")
+      console.log(student.name)
+   }
+}
+
+displayContactList();
